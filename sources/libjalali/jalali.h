@@ -32,7 +32,7 @@ extern "C"
 #endif
 #endif
 
-#define LIBJALALI_VERSION "0.4.1gitd9200f"
+#define LIBJALALI_VERSION "0.6.0"
 
 struct jtm
 {

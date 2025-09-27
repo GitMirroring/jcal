@@ -27,7 +27,7 @@
 #define JCAL_VALID_ARGS "13jyVNePp"
 #define PAHLAVI_ISLAMIC_DIFF 1180
 
-#define JCAL_VERSION "0.4.1"
+#define JCAL_VERSION "0.6.0"
 
 struct cal_layout
 {
