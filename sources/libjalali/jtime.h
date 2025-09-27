@@ -23,40 +23,42 @@
 #define JTIME_H
 
 #ifdef __cplusplus
-extern "C" {
-#if 0 /* /me mutters something about emacs. */
+extern "C"
+{
+#if 0				/* /me mutters something about emacs. */
 }
 #endif
 #endif
 
 #define MAX_BUF_SIZE 2048
 
-extern int is_number_str(const char *p);
+extern int is_number_str (const char *p);
 
-extern char* jasctime(const struct jtm* jtm);
+extern char *jasctime (const struct jtm *jtm);
 
-extern char* jctime(const time_t* timep);
+extern char *jctime (const time_t * timep);
 
-extern struct jtm* jgmtime(const time_t* timep);
+extern struct jtm *jgmtime (const time_t * timep);
 
-extern struct jtm* jlocaltime(const time_t* timep);
+extern struct jtm *jlocaltime (const time_t * timep);
 
-extern time_t jmktime(struct jtm* jtm);
+extern time_t jmktime (struct jtm *jtm);
 
-extern size_t jstrftime(char* s, size_t max, const char* format,
-            const struct jtm* jtm);
+extern size_t jstrftime (char *s, size_t max, const char *format,
+			 const struct jtm *jtm);
 
-extern char* jstrptime(const char* s, const char* format, struct jtm* jtm);
+extern char *jstrptime (const char *s, const char *format, struct jtm *jtm);
 
-extern char* jasctime_r(const struct jtm* jtm, char* buf);
+extern char *jasctime_r (const struct jtm *jtm, char *buf);
 
-extern char* jctime_r(const time_t* timep, char* buf);
+extern char *jctime_r (const time_t * timep, char *buf);
 
-extern struct jtm* jgmtime_r(const time_t* timep, struct jtm* result);
+extern struct jtm *jgmtime_r (const time_t * timep, struct jtm *result);
 
-extern struct jtm* jlocaltime_r(const time_t* timep, struct jtm* result);
+extern struct jtm *jlocaltime_r (const time_t * timep, struct jtm *result);
 
-extern int jalali_to_farsi(char* buf, size_t n, int padding, char* pad, int d);
+extern int jalali_to_farsi (char *buf, size_t n, int padding, char *pad,
+			    int d);
 
 #define STR_IS_NUMBER(buf)                                                     \
   if (!is_number_str(buf))                                                     \
