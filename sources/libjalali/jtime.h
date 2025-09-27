@@ -1,7 +1,7 @@
 /*
  * jtime.h - Tools for manipulating Jalali representation of Iranian calendar
  * and necessary conversations to Gregorian calendar.
- * Copyright (C) 2006, 2007, 2009, 2010, 2011 Ashkan Ghassemi.
+ * Copyright (C) 2006, 2007, 2009, 2010, 2011 Ashkan Ghassemi, 2025 Hossein Naghdbishi.
  *
  * This file is part of libjalali.
  *
