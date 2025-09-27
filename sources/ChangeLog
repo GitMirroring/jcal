@@ -1,3 +1,57 @@
+2025-09-27  Hossein Naghdbishi <me@hossein.me>
+
+  * sources/libjalali/jalali.c, sources/libjalali/jalali.h,
+  sources/libjalali/jconfig.h, sources/libjalali/jtime.c,
+  sources/libjalali/jtime.h, sources/src/jcal.c, sources/src/jcal.h,
+  sources/src/jdate.c, sources/src/jdate.h: GNU's C style
+
+  * sources/COPYING.LESSER, sources/README, sources/libjalali/jalali.c,
+  sources/libjalali/jalali.h, sources/libjalali/jconfig.h,
+  sources/libjalali/jtime.c, sources/libjalali/jtime.h, sources/man/jcal.1,
+  sources/man/jctime.3, sources/man/jdate.1, sources/man/jstrftime.3,
+  sources/man/jstrptime.3, sources/src/jcal.c, sources/src/jcal.h,
+  sources/src/jdate.c, sources/src/jdate.h, sources/src/termcap.h: license
+  change
+
+  * .gitignore, sources/libjalali/jalali.c, sources/libjalali/jalali.h,
+  sources/libjalali/jconfig.h, sources/libjalali/jtime.c,
+  sources/libjalali/jtime.h, sources/src/jdate.c,
+  sources/test_kit/jalali/Makefile.am, sources/test_kit/jalali/leap_range.c:
+  Add my + arsalan's fix
+
+2014-09-23  Ashkan Ghassemi <ghassemi@ftml.net>
+
+  * sources/libjalali/jalali.h, sources/test_kit/Makefile.am,
+  sources/test_kit/jalali/elc.c, sources/test_kit/jalali/get_date.c,
+  sources/test_kit/jalali/get_diff.c, sources/test_kit/jalali/jalali_update.c,
+  sources/test_kit/jalali/jyinfo.c, sources/test_kit/jalali/leap.c,
+  sources/test_kit/jalali/sec_converter.c, sources/test_kit/jtime/jasctime.c,
+  sources/test_kit/jtime/jctime.c, sources/test_kit/jtime/jgmtime.c,
+  sources/test_kit/jtime/jlocaltime.c, sources/test_kit/jtime/jmktime.c,
+  sources/test_kit/jtime/jstrftime.c, sources/test_kit/jtime/jstrptime.c: fixes
+  to Makefile.am files incorrectly looking for system installed libjalali
+  headers instead of those supplied inside the code.
+
+2014-06-06  Ashkan Ghassemi <ghassemi@ftml.net>
+
+  * .gitignore, sources/ChangeLog, sources/Makefile.am, sources/autogen.sh,
+  sources/configure.ac, sources/test_kit/Makefile.am,
+  sources/test_kit/jalali/Makefile.am, {test_kit =>
+  sources/test_kit/jalali}/elc.c, {test_kit =>
+  sources/test_kit/jalali}/get_date.c, {test_kit =>
+  sources/test_kit/jalali}/get_diff.c, .../test_kit/jalali}/jalali_update.c,
+  {test_kit => sources/test_kit/jalali}/jyinfo.c, {test_kit =>
+  sources/test_kit/jalali}/leap.c, .../test_kit/jalali}/sec_converter.c,
+  sources/test_kit/jtime/Makefile.am, .../asctime.c =>
+  sources/test_kit/jtime/jasctime.c, .../ctime.c =>
+  sources/test_kit/jtime/jctime.c, .../gmtime.c =>
+  sources/test_kit/jtime/jgmtime.c, .../test_kit/jtime/jlocaltime.c,
+  .../mktime.c => sources/test_kit/jtime/jmktime.c, {test_kit =>
+  sources/test_kit}/jtime/jstrftime.c, {test_kit =>
+  sources/test_kit}/jtime/jstrptime.c, test_kit/compile_me.sh,
+  test_kit/jtime/compile_me.sh: test_kit moved to sources directory with it's
+  own Makefiles. compile_me.sh scripts removed.
+
 2014-06-05  Amir Ghassemi Nasr <Ameretat.Reith@gmail.com>
 
   * docs/jalali.html, sources/man/jctime.3, sources/pyjalali/datetime.py,
@@ -189,14 +243,13 @@
 
 2011-06-04  Ashkan Ghassemi <ghassemi@ftml.net>
 
-  * .gitignore, docs/jalali.html, docs/jcal.html, docs/jdate.html,
-  docs/jstrftime.html, docs/jstrptime.html, html-docs/jalali.html,
-  html-docs/jcal.html, html-docs/jdate.html, html-docs/jstrftime.html,
-  html-docs/jstrptime.html, sources/AUTHORS, sources/ChangeLog, sources/README,
-  sources/TODO, sources/libjalali/jalali.h, sources/libjalali/jtime.c,
-  sources/man/jdate.1, sources/man/jstrftime.3, sources/src/jcal.h,
-  sources/src/jdate.h: added utf-8 persian outputs to jstrftime. added TODO.
-  docs updated.
+  * .gitignore, {html-docs => docs}/jalali.html, {html-docs => docs}/jcal.html,
+  {html-docs => docs}/jdate.html, {html-docs => docs}/jstrftime.html,
+  {html-docs => docs}/jstrptime.html, sources/AUTHORS, sources/ChangeLog,
+  sources/README, sources/TODO, sources/libjalali/jalali.h,
+  sources/libjalali/jtime.c, sources/man/jdate.1, sources/man/jstrftime.3,
+  sources/src/jcal.h, sources/src/jdate.h: added utf-8 persian outputs to
+  jstrftime. added TODO. docs updated.
 
 2011-06-03  Ashkan Ghassemi <ghassemi@ftml.net>
 
