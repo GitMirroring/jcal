@@ -1,4 +1,5 @@
-#
+#!/usr/bin/env bash
+
 # autogen.sh - Tools for manipulating Jalali representation of Iranian calendar
 # and necessary conversations to Gregorian calendar.
 # Copyright (C) 2006, 2007, 2009, 2010, 2011 Ashkan Ghassemi.
@@ -19,7 +20,6 @@
 # along with libjalali.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-#!/bin/bash
 
 # @OPTIONS
 OPTS="anch"
