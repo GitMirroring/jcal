@@ -64,9 +64,14 @@ struct jyinfo {
     int apl;               /* absolute passed leaps */
 };
 
+#define MAXIMUM_JALALI_YEAR 3000
+
+#define MAXIMUM_GREGORIAN_YEAR 3621
 
 /* Jalali leap year indication function. */
 extern int jalali_is_jleap(int year);
+
+extern int gregorian_is_gleap(int year);
 
 extern void jalali_create_time_from_secs(time_t time, struct ab_jtm* ab_jtm);
 
@@ -87,6 +92,12 @@ extern void jalali_update(struct jtm* jtm);
 extern void jalali_show_time(const struct jtm* j);
 
 extern int jalali_year_month_days(int year, int month);
+
+extern int compute_jdn(int year, int month, int day);
+
+extern int is_valid_jalali(int year, int month, int day);
+
+extern int is_valid_gregorian(int year, int month, int day);
 
 #ifdef __cplusplus
 }

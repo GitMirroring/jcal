@@ -19,6 +19,7 @@
  * along with libjalali.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+#include <ctype.h>
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -154,13 +155,11 @@ void in_jgmtime(const time_t* timep, struct jtm* result)
     if (!timep)
         return;
 
-    struct tm t;
     struct jtm c_jtm;
     struct ab_jtm ab;
     time_t c;
     tzset();
 
-    gmtime_r(timep, &t);
     c = *timep;
 
     jalali_create_time_from_secs(c, &ab);
@@ -751,6 +750,7 @@ char* jstrptime(const char* s, const char* format, struct jtm* jtm)
             /* The day of the month as a decimal number (range 01 to 31). */
         case 'd':
         case 'e':
+	    STR_IS_NUMBER(buf);
             jtm->tm_mday = atoi(buf);
             break;
 
@@ -759,26 +759,31 @@ char* jstrptime(const char* s, const char* format, struct jtm* jtm)
              * (range 00 to 23).
              */
         case 'H':
+	    STR_IS_NUMBER(buf);
             jtm->tm_hour = atoi(buf);
             break;
 
             /* The day of the year as a decimal number (range 001 to 366). */
         case 'j':
+	    STR_IS_NUMBER(buf);
             jtm->tm_yday = atoi(buf) - 1;
             break;
 
             /* The month as a decimal number (range 01 to 12). */
         case 'm':
+	    STR_IS_NUMBER(buf);
             jtm->tm_mon = atoi(buf) -1;
             break;
 
             /* The minute as a decimal number (range 00 to 59). */
         case 'M':
+	    STR_IS_NUMBER(buf);
             jtm->tm_min = atoi(buf);
             break;
 
             /* Seconds since epoch. (1970/1/1) */
         case 's':
+	    STR_IS_NUMBER(buf);
             t = (time_t) atol(buf);
             jlocaltime_r(&t, &_j);
             memcpy(jtm, &_j, sizeof(struct jtm));
@@ -786,6 +791,7 @@ char* jstrptime(const char* s, const char* format, struct jtm* jtm)
 
             /* The second as a decimal number (range 00 to 59). */
         case 'S':
+	    STR_IS_NUMBER(buf);
             jtm->tm_sec = atoi(buf);
             break;
 
@@ -794,6 +800,7 @@ char* jstrptime(const char* s, const char* format, struct jtm* jtm)
              * (range 00 to 99).
              */
         case 'y':
+	    STR_IS_NUMBER(buf);
             tmp = atoi(buf);
             if (tmp >= 19 && tmp < 100)
                 jtm->tm_year = 1300 + tmp;
@@ -803,6 +810,7 @@ char* jstrptime(const char* s, const char* format, struct jtm* jtm)
 
             /* The year as a decimal number including the century. */
         case 'Y':
+	    STR_IS_NUMBER(buf);
             jtm->tm_year = atoi(buf);
             break;
 
@@ -922,3 +930,20 @@ int jalali_to_farsi(char* buf,
 
     return i;
 }
+
+/* Return 1 if <p> is   [+|-]?[0‑9]+ , otherwise 0                          */
+int is_number_str(const char *p) {
+  if (!p || !*p) {
+    return 0;
+  }
+  if (*p == '+' || *p == '-') {
+    ++p;
+  }
+  for (; *p; ++p) {
+    if (!isdigit((unsigned char)*p)) {
+      return 0;
+    }
+  }
+  return 1;
+}
+
