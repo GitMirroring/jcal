@@ -1,3 +1,19 @@
+# types.py - Python bindings of libjalali
+# Copyright (C) 2013, 2014 Amir Ghassemi Nasr.
+#
+# This file is part of pyjalali.
+# pyjalai is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Lesser General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# pyjalali is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU Lesser General Public License for more details.
+# You should have received a copy of the GNU Lesser General Public License
+# along with pyjalali.  If not, see <http://www.gnu.org/licenses/>.
+
 """
     pyjalali.types
     ~~~~~~~~~~~~~~

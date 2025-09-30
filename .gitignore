@@ -17,7 +17,6 @@ sources/test_kit/jtime/jlocaltime
 sources/test_kit/jtime/jmktime
 Makefile.in
 Makefile
-COPYING
 INSTALL
 aclocal.m4
 autom4te.cache
