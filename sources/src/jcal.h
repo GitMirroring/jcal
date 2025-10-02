@@ -1,6 +1,7 @@
 /*
  * jcal.h - Unix cal-like interface to libjalali.
- * Copyright (C) 2006, 2007, 2009, 2010, 2011 Ashkan Ghassemi, 2025 Hossein Naghdbishi.
+ * Copyright (C) 2006, 2007, 2009, 2010, 2011 Ashkan Ghassemi.
+ * Copyright (C) 2025 Hossein Naghdbishi.
  *
  * This file is part of jcal.
  *
