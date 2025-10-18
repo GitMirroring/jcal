@@ -17,7 +17,7 @@
 # GNU Lesser General Public License for more details.
 #
 # You should have received a copy of the GNU Lesser General Public License
-# along with libjalali.  If not, see <http://www.gnu.org/licenses/>.
+# along with libjalali.  If not, see <https://www.gnu.org/licenses/>.
 #
 
 
@@ -43,8 +43,8 @@ function help() {
 	echo -ne "  -c, --clean\t\tremove all auto-generated scripts"
 	echo -e " and files from source tree"
 	echo -e "  -h, --help\t\tprint this help, then exit\n"
-	echo -e "Report bugs to <ghassemi@ftml.net>."
-	echo -e "Jalali calendar home page: <http://nongnu.org/jcal>."
+	echo -e "Report bugs to https://savannah.nongnu.org/bugs/?group=jcal"
+	echo -e "Jalali calendar home page: <https://nongnu.org/jcal>."
 }
 
 # echoes ``ok'' if parameter is zero, ''failed'' otherwise.

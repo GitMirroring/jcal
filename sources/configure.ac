@@ -1,7 +1,7 @@
 #                                               -*- Autoconf -*-
 # Process this file with autoconf to produce a configure script.
 
-AC_INIT([jcal], [0.6.0], [ghassemi@ftml.net])
+AC_INIT([jcal], [0.6.0], [me@hossein.me])
 
 AM_INIT_AUTOMAKE
 AC_PROG_LIBTOOL
