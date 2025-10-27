@@ -1,10 +1,11 @@
-Content-type: text/html
+Content-type: text/html; charset=UTF-8
 
-<HTML><HEAD><TITLE>Manpage of JSTRPTIME</TITLE>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML><HEAD><TITLE>Man page of JSTRPTIME</TITLE>
 </HEAD><BODY>
 <H1>JSTRPTIME</H1>
 Section: libjalali Manual (3)<BR>Updated: 2011-05-28<BR><A HREF="#index">Index</A>
-<A HREF="http://localhost/cgi-bin/man/man2html">Return to Main Contents</A><HR>
+<A HREF="/cgi-bin/man/man2html">Return to Main Contents</A><HR>
 
 <A NAME="lbAB">&nbsp;</A>
 <H2>NAME</H2>
@@ -13,7 +14,7 @@ jstrptime - convert a string representation of jalali date and time to a jalali 
 <A NAME="lbAC">&nbsp;</A>
 <H2>SYNOPSIS</H2>
 
-<B>#include &lt;<A HREF="file:/usr/include/time.h">time.h</A>&gt;</B>
+<B>#include &lt;<A HREF="file:///usr/include/time.h">time.h</A>&gt;</B>
 
 <P>
 <B>char *jstrptime(const char *</B><I>s</I><B>, const char *</B><I>format</I><B>,</B>
@@ -29,7 +30,7 @@ The
 <B>jstrptime</B>()
 
 function is the converse function to
-<B><A HREF="http://localhost/cgi-bin/man/man2html?3+jstrftime">jstrftime</A></B>(3)
+<B><A HREF="/cgi-bin/man/man2html?3+jstrftime">jstrftime</A></B>(3)
 
 and converts the character string pointed to by
 <I>s</I>
@@ -48,7 +49,7 @@ Here
 
 is a character string that consists of field descriptors and text characters,
 reminiscent of
-<B><A HREF="http://localhost/cgi-bin/man/man2html?3+scanf">scanf</A></B>(3).
+<B><A HREF="/cgi-bin/man/man2html?3+scanf">scanf</A></B>(3).
 
 Each field descriptor consists of a
 <B>%</B>
@@ -137,7 +138,7 @@ The year, including century (for example, 1390).
 </DL>
 <P>
 
-The broken-down jalali time structure <I>jtm</I> is defined in <I>&lt;<A HREF="file:/usr/include/jtime.h">jtime.h</A>&gt;</I>
+The broken-down jalali time structure <I>jtm</I> is defined in <I>&lt;<A HREF="file:///usr/include/jtime.h">jtime.h</A>&gt;</I>
 as follows:
 <P>
 
@@ -192,19 +193,19 @@ explicitly specified.
 <H2>EXAMPLE</H2>
 
 The following example demonstrates the use of
-<B><A HREF="http://localhost/cgi-bin/man/man2html?3+jstrptime">jstrptime</A></B>(3)
+<B><A HREF="/cgi-bin/man/man2html?3+jstrptime">jstrptime</A></B>(3)
 
 and
-<B><A HREF="http://localhost/cgi-bin/man/man2html?3+jstrftime">jstrftime</A></B>(3).
+<B><A HREF="/cgi-bin/man/man2html?3+jstrftime">jstrftime</A></B>(3).
 
 <P>
 <PRE>
-#include &lt;<A HREF="file:/usr/include/stdio.h">stdio.h</A>&gt;
-#include &lt;<A HREF="file:/usr/include/stdlib.h">stdlib.h</A>&gt;
-#include &lt;<A HREF="file:/usr/include/string.h">string.h</A>&gt;
-#include &lt;<A HREF="file:/usr/include/time.h">time.h</A>&gt;
-#include &lt;<A HREF="file:/usr/include/jalali.h">jalali.h</A>&gt;
-#include &lt;<A HREF="file:/usr/include/jtime.h">jtime.h</A>&gt;
+#include &lt;<A HREF="file:///usr/include/stdio.h">stdio.h</A>&gt;
+#include &lt;<A HREF="file:///usr/include/stdlib.h">stdlib.h</A>&gt;
+#include &lt;<A HREF="file:///usr/include/string.h">string.h</A>&gt;
+#include &lt;<A HREF="file:///usr/include/time.h">time.h</A>&gt;
+#include &lt;<A HREF="file:///usr/include/jalali.h">jalali.h</A>&gt;
+#include &lt;<A HREF="file:///usr/include/jtime.h">jtime.h</A>&gt;
 
 int
 main(void)
@@ -223,21 +224,21 @@ main(void)
 <A NAME="lbAI">&nbsp;</A>
 <H2>SEE ALSO</H2>
 
-<B><A HREF="http://localhost/cgi-bin/man/man2html?2+time">time</A></B>(2),
+<B><A HREF="/cgi-bin/man/man2html?2+time">time</A></B>(2),
 
-<B><A HREF="http://localhost/cgi-bin/man/man2html?1+jdate">jdate</A></B>(1),
+<B><A HREF="/cgi-bin/man/man2html?1+jdate">jdate</A></B>(1),
 
-<B><A HREF="http://localhost/cgi-bin/man/man2html?1+jcal">jcal</A></B>(1),
+<B><A HREF="/cgi-bin/man/man2html?1+jcal">jcal</A></B>(1),
 
-<B><A HREF="http://localhost/cgi-bin/man/man2html?3+getdate">getdate</A></B>(3),
+<B><A HREF="/cgi-bin/man/man2html?3+getdate">getdate</A></B>(3),
 
-<B><A HREF="http://localhost/cgi-bin/man/man2html?3+scanf">scanf</A></B>(3),
+<B><A HREF="/cgi-bin/man/man2html?3+scanf">scanf</A></B>(3),
 
-<B><A HREF="http://localhost/cgi-bin/man/man2html?3+jstrftime">jstrftime</A></B>(3),
+<B><A HREF="/cgi-bin/man/man2html?3+jstrftime">jstrftime</A></B>(3),
 
-<B><A HREF="http://localhost/cgi-bin/man/man2html?3+jctime">jctime</A></B>(3),
+<B><A HREF="/cgi-bin/man/man2html?3+jctime">jctime</A></B>(3),
 
-<B><A HREF="http://localhost/cgi-bin/man/man2html?7+feature_test_macros">feature_test_macros</A></B>(7)
+<B><A HREF="/cgi-bin/man/man2html?7+feature_test_macros">feature_test_macros</A></B>(7)
 
 <A NAME="lbAJ">&nbsp;</A>
 <H2>COLOPHON</H2>
@@ -248,11 +249,11 @@ This page is part of release 0.2 of the libjalali
 <A NAME="lbAK">&nbsp;</A>
 <H2>AUTHOR</H2>
 
-Written by Ashkan Ghassemi. &lt;<A HREF="mailto:ghassemi@ftml.net">ghassemi@ftml.net</A>&gt;
+Written by Ashkan Ghassemi.
 <A NAME="lbAL">&nbsp;</A>
 <H2>REPORTING BUGS</H2>
 
-Report libjalali bugs to &lt;<A HREF="mailto:ghassemi@ftml.net">ghassemi@ftml.net</A>&gt;
+Report libjalali bugs to <A HREF="https://savannah.nongnu.org/bugs/?group=jcal">https://savannah.nongnu.org/bugs/?group=jcal</A> 
 <P>
 libjalali home page: &lt;<A HREF="http://savannah.nongnu.org/projects/jcal/">http://savannah.nongnu.org/projects/jcal/</A>&gt;
 <A NAME="lbAM">&nbsp;</A>
@@ -284,8 +285,8 @@ law.
 </DL>
 <HR>
 This document was created by
-<A HREF="http://localhost/cgi-bin/man/man2html">man2html</A>,
+<A HREF="/cgi-bin/man/man2html">man2html</A>,
 using the manual pages.<BR>
-Time: 00:22:18 GMT, June 15, 2011
+Time: 12:46:12 GMT, October 27, 2025
 </BODY>
 </HTML>

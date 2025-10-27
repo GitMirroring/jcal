@@ -1,10 +1,11 @@
-Content-type: text/html
+Content-type: text/html; charset=UTF-8
 
-<HTML><HEAD><TITLE>Manpage of JCTIME</TITLE>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML><HEAD><TITLE>Man page of JCTIME</TITLE>
 </HEAD><BODY>
 <H1>JCTIME</H1>
 Section: libjalali Manual (3)<BR>Updated: 2011-05-28<BR><A HREF="#index">Index</A>
-<A HREF="http://localhost/cgi-bin/man/man2html">Return to Main Contents</A><HR>
+<A HREF="/cgi-bin/man/man2html">Return to Main Contents</A><HR>
 
 <A NAME="lbAB">&nbsp;</A>
 <H2>NAME</H2>
@@ -15,7 +16,7 @@ jlocaltime_r - transform jalali date and time to broken-down jalali time or ASCI
 <H2>SYNOPSIS</H2>
 
 <PRE>
-<B>#include &lt;<A HREF="file:/usr/include/jtime.h">jtime.h</A>&gt;</B>
+<B>#include &lt;<A HREF="file:///usr/include/jtime.h">jtime.h</A>&gt;</B>
 
 <B>char *jasctime(const struct jtm *</B><I>jtm</I><B>);</B>
 <BR>
@@ -36,7 +37,7 @@ jlocaltime_r - transform jalali date and time to broken-down jalali time or ASCI
 <B>time_t jmktime(struct jtm *</B><I>jtm</I><B>);</B>
 <BR>
 
-<B>#include &lt;<A HREF="file:/usr/include/jalali.h">jalali.h</A>&gt;</B>
+<B>#include &lt;<A HREF="file:///usr/include/jalali.h">jalali.h</A>&gt;</B>
 
 <B>int jalali_is_jleap(int </B><I>year</I><B>);</B>
 
@@ -95,7 +96,7 @@ separated into year, month, day, etc.
 <P>
 
 Broken-down jalali time is stored
-in the structure <I>jtm</I> which is defined in <I>&lt;<A HREF="file:/usr/include/jtime.h">jtime.h</A>&gt;</I> as follows:
+in the structure <I>jtm</I> which is defined in <I>&lt;<A HREF="file:///usr/include/jtime.h">jtime.h</A>&gt;</I> as follows:
 <P>
 
 <PRE>
@@ -295,7 +296,7 @@ The
 function does the same, but stores the data in a
 user-supplied struct.
 The function acts as if it called
-<B><A HREF="http://localhost/cgi-bin/man/man2html?3+tzset">tzset</A></B>(3)
+<B><A HREF="/cgi-bin/man/man2html?3+tzset">tzset</A></B>(3)
 
 <P>
 
@@ -306,7 +307,7 @@ function converts the calendar time <I>timep</I> to
 broken-down jalali time representation,
 expressed relative to the user's specified timezone.
 The function acts as if it called
-<B><A HREF="http://localhost/cgi-bin/man/man2html?3+tzset">tzset</A></B>(3)
+<B><A HREF="/cgi-bin/man/man2html?3+tzset">tzset</A></B>(3)
 
 and sets the external variables <I>tzname</I> with
 information about the current timezone, <I>timezone</I> with the difference
@@ -485,11 +486,11 @@ valid interval, they will be normalized (so that, for example,
 
 The following program converts a jalali date to gregorian
 <PRE>
-#include &lt;<A HREF="file:/usr/include/stdio.h">stdio.h</A>&gt;
-#include &lt;<A HREF="file:/usr/include/stdlib.h">stdlib.h</A>&gt;
-#include &lt;<A HREF="file:/usr/include/time.h">time.h</A>&gt;
-#include &lt;<A HREF="file:/usr/include/jalali.h">jalali.h</A>&gt;
-#include &lt;<A HREF="file:/usr/include/jtime.h">jtime.h</A>&gt;
+#include &lt;<A HREF="file:///usr/include/stdio.h">stdio.h</A>&gt;
+#include &lt;<A HREF="file:///usr/include/stdlib.h">stdlib.h</A>&gt;
+#include &lt;<A HREF="file:///usr/include/time.h">time.h</A>&gt;
+#include &lt;<A HREF="file:///usr/include/jalali.h">jalali.h</A>&gt;
+#include &lt;<A HREF="file:///usr/include/jtime.h">jtime.h</A>&gt;
 
 int
 main(int argc, char ** argv)
@@ -550,7 +551,7 @@ and
 
 should be considered obsolete.
 Use
-<B><A HREF="http://localhost/cgi-bin/man/man2html?3+jstrftime">jstrftime</A></B>(3)
+<B><A HREF="/cgi-bin/man/man2html?3+jstrftime">jstrftime</A></B>(3)
 
 instead.
 <A NAME="lbAH">&nbsp;</A>
@@ -593,29 +594,29 @@ const char *tm_zone;      /* Timezone abbreviation */
 <A NAME="lbAI">&nbsp;</A>
 <H2>SEE ALSO</H2>
 
-<B><A HREF="http://localhost/cgi-bin/man/man2html?1+jdate">jdate</A></B>(1),
+<B><A HREF="/cgi-bin/man/man2html?1+jdate">jdate</A></B>(1),
 
-<B><A HREF="http://localhost/cgi-bin/man/man2html?1+jcal">jcal</A></B>(1),
+<B><A HREF="/cgi-bin/man/man2html?1+jcal">jcal</A></B>(1),
 
-<B><A HREF="http://localhost/cgi-bin/man/man2html?2+gettimeofday">gettimeofday</A></B>(2),
+<B><A HREF="/cgi-bin/man/man2html?2+gettimeofday">gettimeofday</A></B>(2),
 
-<B><A HREF="http://localhost/cgi-bin/man/man2html?2+time">time</A></B>(2),
+<B><A HREF="/cgi-bin/man/man2html?2+time">time</A></B>(2),
 
-<B><A HREF="http://localhost/cgi-bin/man/man2html?2+utime">utime</A></B>(2),
+<B><A HREF="/cgi-bin/man/man2html?2+utime">utime</A></B>(2),
 
-<B><A HREF="http://localhost/cgi-bin/man/man2html?3+clock">clock</A></B>(3),
+<B><A HREF="/cgi-bin/man/man2html?3+clock">clock</A></B>(3),
 
-<B><A HREF="http://localhost/cgi-bin/man/man2html?3+difftime">difftime</A></B>(3),
+<B><A HREF="/cgi-bin/man/man2html?3+difftime">difftime</A></B>(3),
 
-<B><A HREF="http://localhost/cgi-bin/man/man2html?3+jstrftime">jstrftime</A></B>(3),
+<B><A HREF="/cgi-bin/man/man2html?3+jstrftime">jstrftime</A></B>(3),
 
-<B><A HREF="http://localhost/cgi-bin/man/man2html?3+jstrptime">jstrptime</A></B>(3),
+<B><A HREF="/cgi-bin/man/man2html?3+jstrptime">jstrptime</A></B>(3),
 
-<B><A HREF="http://localhost/cgi-bin/man/man2html?3+timegm">timegm</A></B>(3),
+<B><A HREF="/cgi-bin/man/man2html?3+timegm">timegm</A></B>(3),
 
-<B><A HREF="http://localhost/cgi-bin/man/man2html?3+tzset">tzset</A></B>(3),
+<B><A HREF="/cgi-bin/man/man2html?3+tzset">tzset</A></B>(3),
 
-<B><A HREF="http://localhost/cgi-bin/man/man2html?7+time">time</A></B>(7)
+<B><A HREF="/cgi-bin/man/man2html?7+time">time</A></B>(7)
 
 <A NAME="lbAJ">&nbsp;</A>
 <H2>COLOPHON</H2>
@@ -626,20 +627,20 @@ This page is part of release 0.2 of the libjalali
 <A NAME="lbAK">&nbsp;</A>
 <H2>AUTHOR</H2>
 
-Written by Ashkan Ghassemi. &lt;<A HREF="mailto:ghassemi@ftml.net">ghassemi@ftml.net</A>&gt;
+Written by Ashkan Ghassemi.
 <A NAME="lbAL">&nbsp;</A>
 <H2>REPORTING BUGS</H2>
 
-Report libjalali bugs to &lt;<A HREF="mailto:ghassemi@ftml.net">ghassemi@ftml.net</A>&gt;
+Report libjalali bugs to <A HREF="https://savannah.nongnu.org/bugs/?group=jcal">https://savannah.nongnu.org/bugs/?group=jcal</A> 
 <P>
-libjalali home page: &lt;<A HREF="http://savannah.nongnu.org/projects/jcal/">http://savannah.nongnu.org/projects/jcal/</A>&gt;
+libjalali home page: &lt;<A HREF="https://savannah.nongnu.org/projects/jcal/">https://savannah.nongnu.org/projects/jcal/</A>&gt;
 <A NAME="lbAM">&nbsp;</A>
 <H2>COPYRIGHT</H2>
 
 Copyright (C) 2011 Ashkan Ghassemi.
 <P>
 License LGPLv3+: GNU LGPL version 3 or later
-&lt;<A HREF="http://gnu.org/licenses/lgpl.html">http://gnu.org/licenses/lgpl.html</A>&gt;.
+&lt;<A HREF="https://gnu.org/licenses/lgpl.html">https://gnu.org/licenses/lgpl.html</A>&gt;.
 This is free software: you are free to change and redistribute it. There is NO WARRANTY, to the extent permitted by
 law.
 <P>
@@ -662,8 +663,8 @@ law.
 </DL>
 <HR>
 This document was created by
-<A HREF="http://localhost/cgi-bin/man/man2html">man2html</A>,
+<A HREF="/cgi-bin/man/man2html">man2html</A>,
 using the manual pages.<BR>
-Time: 06:28:14 GMT, June 05, 2014
+Time: 12:44:13 GMT, October 27, 2025
 </BODY>
 </HTML>

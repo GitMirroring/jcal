@@ -1,10 +1,11 @@
-Content-type: text/html
+Content-type: text/html; charset=UTF-8
 
-<HTML><HEAD><TITLE>Manpage of JSTRFTIME</TITLE>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML><HEAD><TITLE>Man page of JSTRFTIME</TITLE>
 </HEAD><BODY>
 <H1>JSTRFTIME</H1>
 Section: libjalali Manual (3)<BR>Updated: 2011-05-28<BR><A HREF="#index">Index</A>
-<A HREF="http://localhost/cgi-bin/man/man2html">Return to Main Contents</A><HR>
+<A HREF="/cgi-bin/man/man2html">Return to Main Contents</A><HR>
 
 <A NAME="lbAB">&nbsp;</A>
 <H2>NAME</H2>
@@ -14,7 +15,7 @@ jstrftime - format jalali date and time
 <H2>SYNOPSIS</H2>
 
 <PRE>
-<B>#include &lt;<A HREF="file:/usr/include/jtime.h">jtime.h</A>&gt;</B>
+<B>#include &lt;<A HREF="file:///usr/include/jtime.h">jtime.h</A>&gt;</B>
 
 <B>size_t jstrftime(char *</B><I>s</I><B>, size_t </B><I>max</I><B>, const char *</B><I>format</I><B>,</B>
 <B>                const struct tm *</B><I>jtm</I><B>);</B>
@@ -37,7 +38,7 @@ The format specification is a null-terminated string and may contain
 special character sequences called
 <I>conversion specifications,</I>
 
-each of which is introduced by a aq%aq character and terminated by
+each of which is introduced by a '%' character and terminated by
 some other character known as a
 <I>conversion specifier character.</I>
 
@@ -275,13 +276,13 @@ The timezone or name or abbreviation.
 <DT><B>%%</B>
 
 <DD>
-A literal aq%aq character.
+A literal '%' character.
 </DL>
 <P>
 
-The broken-down time structure <I>tm</I> is defined in <I>&lt;<A HREF="file:/usr/include/jtime.h">jtime.h</A>&gt;</I>.
+The broken-down time structure <I>tm</I> is defined in <I>&lt;<A HREF="file:///usr/include/jtime.h">jtime.h</A>&gt;</I>.
 See also
-<B><A HREF="http://localhost/cgi-bin/man/man2html?3+jctime">jctime</A></B>(3).
+<B><A HREF="/cgi-bin/man/man2html?3+jctime">jctime</A></B>(3).
 
 <A NAME="lbAE">&nbsp;</A>
 <H2>RETURN VALUE</H2>
@@ -341,7 +342,7 @@ are as follows:
 
 <PRE>
 
-$<B> ./a.out aq%maq</B>
+$<B> ./a.out '%m'</B>
 Result string is &quot;11&quot;
 </PRE>
 
@@ -351,11 +352,11 @@ Result string is &quot;11&quot;
 Here's the program source:
 <PRE>
 
-#include &lt;<A HREF="file:/usr/include/stdio.h">stdio.h</A>&gt;
-#include &lt;<A HREF="file:/usr/include/stdlib.h">stdlib.h</A>&gt;
-#include &lt;<A HREF="file:/usr/include/time.h">time.h</A>&gt;
-#include &lt;<A HREF="file:/usr/include/jalali.h">jalali.h</A>&gt;
-#include &lt;<A HREF="file:/usr/include/jtime.h">jtime.h</A>&gt;
+#include &lt;<A HREF="file:///usr/include/stdio.h">stdio.h</A>&gt;
+#include &lt;<A HREF="file:///usr/include/stdlib.h">stdlib.h</A>&gt;
+#include &lt;<A HREF="file:///usr/include/time.h">time.h</A>&gt;
+#include &lt;<A HREF="file:///usr/include/jalali.h">jalali.h</A>&gt;
+#include &lt;<A HREF="file:///usr/include/jtime.h">jtime.h</A>&gt;
 
 int
 main(int argc, char *argv[])
@@ -384,17 +385,17 @@ main(int argc, char *argv[])
 <A NAME="lbAJ">&nbsp;</A>
 <H2>SEE ALSO</H2>
 
-<B><A HREF="http://localhost/cgi-bin/man/man2html?1+jdate">jdate</A></B>(1),
+<B><A HREF="/cgi-bin/man/man2html?1+jdate">jdate</A></B>(1),
 
-<B><A HREF="http://localhost/cgi-bin/man/man2html?1+jcal">jcal</A></B>(1),
+<B><A HREF="/cgi-bin/man/man2html?1+jcal">jcal</A></B>(1),
 
-<B><A HREF="http://localhost/cgi-bin/man/man2html?2+time">time</A></B>(2),
+<B><A HREF="/cgi-bin/man/man2html?2+time">time</A></B>(2),
 
-<B><A HREF="http://localhost/cgi-bin/man/man2html?3+jctime">jctime</A></B>(3),
+<B><A HREF="/cgi-bin/man/man2html?3+jctime">jctime</A></B>(3),
 
-<B><A HREF="http://localhost/cgi-bin/man/man2html?3+sprintf">sprintf</A></B>(3),
+<B><A HREF="/cgi-bin/man/man2html?3+sprintf">sprintf</A></B>(3),
 
-<B><A HREF="http://localhost/cgi-bin/man/man2html?3+jstrptime">jstrptime</A></B>(3)
+<B><A HREF="/cgi-bin/man/man2html?3+jstrptime">jstrptime</A></B>(3)
 
 <A NAME="lbAK">&nbsp;</A>
 <H2>COLOPHON</H2>
@@ -405,11 +406,11 @@ This page is part of release 0.2 of the libjalali
 <A NAME="lbAL">&nbsp;</A>
 <H2>AUTHOR</H2>
 
-Written by Ashkan Ghassemi. &lt;<A HREF="mailto:ghassemi@ftml.net">ghassemi@ftml.net</A>&gt;
+Written by Ashkan Ghassemi.
 <A NAME="lbAM">&nbsp;</A>
 <H2>REPORTING BUGS</H2>
 
-Report libjalali bugs to &lt;<A HREF="mailto:ghassemi@ftml.net">ghassemi@ftml.net</A>&gt;
+Report libjalali bugs to <A HREF="https://savannah.nongnu.org/bugs/?group=jcal">https://savannah.nongnu.org/bugs/?group=jcal</A> 
 <P>
 libjalali home page: &lt;<A HREF="http://savannah.nongnu.org/projects/jcal/">http://savannah.nongnu.org/projects/jcal/</A>&gt;
 <A NAME="lbAN">&nbsp;</A>
@@ -444,8 +445,8 @@ law.
 </DL>
 <HR>
 This document was created by
-<A HREF="http://localhost/cgi-bin/man/man2html">man2html</A>,
+<A HREF="/cgi-bin/man/man2html">man2html</A>,
 using the manual pages.<BR>
-Time: 00:22:18 GMT, June 15, 2011
+Time: 12:46:01 GMT, October 27, 2025
 </BODY>
 </HTML>
