@@ -1,6 +1,6 @@
 0.7.0
 ======
 
-* Adding support for locale-aware outputs
-to jcal and jdate.
+- Adding support for locale-aware outputs to jcal and jdate.
 Hindi digits, month and weekday names.
+- Revive pyjalali and its docs
