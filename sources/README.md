@@ -1,23 +1,3 @@
-/*
- * README - Unix cal-like interface to libjalali.
- * Copyright (C) 2006, 2007, 2009, 2010, 2011 Ashkan Ghassemi.
- *
- * This file is part of jcal.
- *
- * jcal is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * jcal is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with jcal.  If not, see <http://www.gnu.org/licenses/>.
- */
-
 jcal is a UNIX cal-like tool to display calendar
 based on jalali calendar system.
 
@@ -34,7 +14,7 @@ jcal switches in brief:
 -3  Display prev/current/next months output.
 -V  Display calendar version.
 
-See man jcal for more information.
+See `man jcal` for more information.
 
 jdate switches in brief:
 -a  Display the last access time for a file.
@@ -51,12 +31,20 @@ build system then keep reading.
 
 Installation
 ============
-Run ./autogen.sh to make `configure` script for you.  Then follow common
+Run `./autogen.sh` to make `configure` script for you.  Then follow common
 package installation routine as described in INSTALL.
 
 If you want pyjalali package too, you can either pass `--enable-pyjalali`
-option to ./configure script or after installing libjalali use provided
+option to `./configure` script or after installing libjalali use provided
 `setup.py` directly:
 
-# cd jcal/sources
-# python setup.py install
+``` sh
+cd jcal/sources
+python setup.py install
+```
+
+
+# Copyright of README.md
+
+Copying and distribution of this file, with or without modification, are permitted in any medium without royalty
+provided the copyright notice and this notice are preserved.  This file is offered as-is, without any warranty.
