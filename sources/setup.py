@@ -2,9 +2,9 @@
 
 # setup.py - Tools for manipulating Jalali representation of Iranian calendar
 # and necessary conversations to Gregorian calendar.
-# Copyright (C) 2006, 2007, 2009, 2010, 2011 Ashkan Ghassemi.
+# Copyright (C) 2006-2011 Ashkan Ghassemi.
 #
-# This file is part of libjalali.
+# This file is part of pyjalali.
 #
 # libjalali is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Lesser General Public License as published by
@@ -32,8 +32,8 @@ setup(
         name='pyjalali',
         description='Jalali calendar tools based on libjalali',
         long_description=pyjalali.__doc__.replace(' '*4, ''),
-        url='http://github.com/ashkang/jcal',
-        license='GPLv3',
+        url='https://github.com/ashkang/jcal',
+        license='LGPLv3',
         version=version,
 
         packages=['pyjalali'],
@@ -41,7 +41,7 @@ setup(
         classifiers = [
             'Development Status :: 3 - Alpha',
             'Intended Audience :: Developers',
-            'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
+            'License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)',
             'Topic :: Software Development :: Libraries :: Python Modules',
             'Topic :: Software Development :: Localization'
         ]

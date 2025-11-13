@@ -2,6 +2,7 @@
  * leap_range.c - Tools for manipulating Jalali representation of Iranian calendar
  * and necessary conversations to Gregorian calendar.
  * Copyright (C) 2025 Amir Arsalan Yavari.
+ * Copyright (C) 2025 Hossein Naghdbishi.
  *
  * This file is part of libjalali.
  *
