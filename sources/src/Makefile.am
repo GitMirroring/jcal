@@ -17,12 +17,12 @@
 #along with jcal.      If not, see <http://www.gnu.org/licenses/>.
 bin_PROGRAMS = jcal jdate
 
-INCLUDES = -I. -I.. -I../libjalali -I@includedir@
+AM_CPPFLAGS = -I$(srcdir) -I$(top_srcdir)/libjalali
 
 AM_CFLAGS = @CFLAGS@ -fno-inline -D_REENTRANT -Wall\
 	-O2 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE
 
-jcal_SOURCES = jcal.c
-jdate_SOURCES = jdate.c
+jcal_SOURCES = jcal.c jcal.h termcap.h
+jdate_SOURCES = jdate.c jdate.h
 LDADD           = ../libjalali/libjalali.la -L@libdir@
 LIBS            = @LIBS@ $(THREAD_LIBS)

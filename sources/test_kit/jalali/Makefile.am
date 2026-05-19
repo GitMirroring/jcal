@@ -17,9 +17,11 @@
 # You should have received a copy of the GNU Lesser General Public License
 # along with libjalali.  If not, see <https://www.gnu.org/licenses/>.
 
-bin_PROGRAMS = elc get_date get_diff jalali_update jyinfo leap sec_converter leap_range
+check_PROGRAMS = elc get_date get_diff jalali_update jyinfo leap sec_converter leap_range
 
-INCLUDES = -I../../libjalali
+TESTS = leap_range
+
+AM_CPPFLAGS = -I$(top_srcdir)/libjalali
 
 AM_CFLAGS = @CFLAGS@ -fno-inline -D_REENTRANT -Wall \
 	-O2 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE

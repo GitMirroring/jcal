@@ -17,9 +17,9 @@
 # You should have received a copy of the GNU Lesser General Public License
 # along with libjalali.  If not, see <https://www.gnu.org/licenses/>.
 
-bin_PROGRAMS = jasctime jctime jgmtime jstrftime jstrptime jlocaltime jmktime
+check_PROGRAMS = jasctime jctime jgmtime jstrftime jstrptime jlocaltime jmktime
 
-INCLUDES = -I../../libjalali
+AM_CPPFLAGS = -I$(top_srcdir)/libjalali
 
 AM_CFLAGS = @CFLAGS@ -fno-inline -D_REENTRANT -Wall \
 	-O2 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE
@@ -32,4 +32,4 @@ jstrptime_SOURCES = jstrptime.c
 jlocaltime_SOURCES = jlocaltime.c
 jmktime_SOURCES = jmktime.c
 
-LDADD           = ../../libjalali/libjalali.la -lreadline
+LDADD           = ../../libjalali/libjalali.la @READLINE_LIBS@

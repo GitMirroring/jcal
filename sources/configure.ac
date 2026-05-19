@@ -19,7 +19,7 @@
 
 #                                              -*- Autoconf -*-
 # Process this file with autoconf to produce a configure script.
-AC_INIT([jcal], [0.6.0], [me@hossein.me])
+AC_INIT([jcal], [0.6.0], [hossein@naghdbishi.com])
 
 AM_INIT_AUTOMAKE
 AC_PROG_LIBTOOL
@@ -32,6 +32,14 @@ AC_PROG_MAKE_SET
 AC_PATH_PROG(CP, cp, /bin/cp)
 AC_PATH_PROG(RM, rm, /bin/rm)
 AC_PATH_PROG(RMDIR, rmdir, /bin/rmdir)
+
+# Checks for libraries.
+AC_CHECK_LIB([readline], [readline], [
+  AC_SUBST([READLINE_LIBS], ["-lreadline"])
+  AC_DEFINE([HAVE_LIBREADLINE], [1], [Define if you have libreadline])
+], [
+  AC_MSG_WARN([libreadline not found, some tests may not build])
+])
 
 # Checks for header files.
 AC_CHECK_HEADERS([time.h limits.h stdlib.h string.h sys/time.h unistd.h])

@@ -32,9 +32,9 @@ libjalali_la_SOURCES = jalali.c jtime.c
 #      compatible (have not removed a function from the API, for
 #      example...)
 
-libjalali_la_LDFLAGS = -version-info 0:5:0
+libjalali_la_LDFLAGS = -version-info 1:0:1
 includedir= $(prefix)/include/jalali
 include_HEADERS = jalali.h jtime.h jconfig.h
-INCLUDES        =  -I. -I@includedir@
+AM_CPPFLAGS = -I$(srcdir)
 LIBS            = @LIBS@ $(THREAD_LIBS)
 AM_CFLAGS          = @CFLAGS@ -D_REENTRANT -W -Wall -O2
